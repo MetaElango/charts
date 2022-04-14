@@ -3474,6 +3474,15 @@ export const options = {
       },
       ticks: {
         color: "#ffffff",
+        callback: function (value, index, ticks) {
+          console.log(value, index, ticks[index].value);
+          let val = new Date(ticks[index].value).toString().split(" ");
+          return val[1] + " " + val[3][2] + val[3][3];
+        },
+        autoSkip: true,
+        maxTicksLimit: 10,
+        maxRotation: 0,
+        minRotation: 0,
       },
     },
     y: {
@@ -3500,10 +3509,10 @@ export const data = {
       borderColor: "rgb(255, 99, 132)",
       backgroundColor: "rgba(255, 99, 132, 0.5)",
       pointStyle: "circle",
-      pointBorderWidth: 0,
+      pointBorderWidth: 1,
       hideInLegendAndTooltip: false,
       borderWidth: 4,
-      pointRadius: 2,
+      pointRadius: 2.5,
       color: "#fff",
     },
     {
@@ -3513,8 +3522,8 @@ export const data = {
       backgroundColor: "rgba(53, 162, 235, 0.5)",
       pointStyle: "circle",
       borderWidth: 4,
-      pointBorderWidth: 0,
-      pointRadius: 2,
+      pointBorderWidth: 1,
+      pointRadius: 2.5,
       color: "#fff",
     },
   ],

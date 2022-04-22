@@ -3459,17 +3459,17 @@ const dataList = [
   {
     date: "18 April 2022",
     nav: 342.37,
-    sp500: 160.09,
+    sp500: 160,
   },
   {
     date: "19 April 2022",
     nav: 342.21,
-    sp500: 162.66,
+    sp500: 160.85,
   },
   {
     date: "20 April 2022",
     nav: 343.1,
-    sp500: 162.55,
+    sp500: 160.85,
   },
 ];
 // ChartJS.register(
@@ -3525,7 +3525,7 @@ export const options = {
           return val[1] + " " + val[3][2] + val[3][3];
         },
         autoSkip: true,
-        maxTicksLimit: 5,
+        maxTicksLimit: 10,
         maxRotation: 0,
         minRotation: 0,
       },
@@ -3557,7 +3557,7 @@ export const data = {
       pointBorderWidth: 1,
       hideInLegendAndTooltip: false,
       borderWidth: 4,
-      pointRadius: 2.5,
+      pointRadius: 1,
       color: "#fff",
     },
     {
@@ -3568,7 +3568,7 @@ export const data = {
       pointStyle: "circle",
       borderWidth: 4,
       pointBorderWidth: 1,
-      pointRadius: 2.5,
+      pointRadius: 1,
       color: "#fff",
     },
   ],

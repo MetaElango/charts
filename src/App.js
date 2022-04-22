@@ -3426,6 +3426,51 @@ const dataList = [
     nav: 338.37,
     sp500: 160.85,
   },
+  {
+    date: "12 April 2022",
+    nav: 339.47,
+    sp500: 160.3,
+  },
+  {
+    date: "13 April 2022",
+    nav: 339.92,
+    sp500: 162.09,
+  },
+  {
+    date: "14 April 2022",
+    nav: 339.89,
+    sp500: 160.12,
+  },
+  {
+    date: "15 April 2022",
+    nav: 342.12,
+    sp500: 160.12,
+  },
+  {
+    date: "16 April 2022",
+    nav: 339.46,
+    sp500: 160.12,
+  },
+  {
+    date: "17 April 2022",
+    nav: 340.82,
+    sp500: 160.12,
+  },
+  {
+    date: "18 April 2022",
+    nav: 342.37,
+    sp500: 160.09,
+  },
+  {
+    date: "19 April 2022",
+    nav: 342.21,
+    sp500: 162.66,
+  },
+  {
+    date: "20 April 2022",
+    nav: 343.1,
+    sp500: 162.55,
+  },
 ];
 // ChartJS.register(
 //   CategoryScale,
@@ -3474,6 +3519,15 @@ export const options = {
       },
       ticks: {
         color: "#ffffff",
+        callback: function (value, index, ticks) {
+          console.log(value, index, ticks[index].value);
+          let val = new Date(ticks[index].value).toString().split(" ");
+          return val[1] + " " + val[3][2] + val[3][3];
+        },
+        autoSkip: true,
+        maxTicksLimit: 10,
+        maxRotation: 0,
+        minRotation: 0,
       },
     },
     y: {
@@ -3500,10 +3554,10 @@ export const data = {
       borderColor: "rgb(255, 99, 132)",
       backgroundColor: "rgba(255, 99, 132, 0.5)",
       pointStyle: "circle",
-      pointBorderWidth: 0,
+      pointBorderWidth: 1,
       hideInLegendAndTooltip: false,
       borderWidth: 4,
-      pointRadius: 2,
+      pointRadius: 2.5,
       color: "#fff",
     },
     {
@@ -3513,8 +3567,8 @@ export const data = {
       backgroundColor: "rgba(53, 162, 235, 0.5)",
       pointStyle: "circle",
       borderWidth: 4,
-      pointBorderWidth: 0,
-      pointRadius: 2,
+      pointBorderWidth: 1,
+      pointRadius: 2.5,
       color: "#fff",
     },
   ],

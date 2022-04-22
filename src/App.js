@@ -3525,7 +3525,7 @@ export const options = {
           return val[1] + " " + val[3][2] + val[3][3];
         },
         autoSkip: true,
-        maxTicksLimit: 10,
+        maxTicksLimit: 5,
         maxRotation: 0,
         minRotation: 0,
       },

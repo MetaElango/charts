@@ -3426,6 +3426,51 @@ const dataList = [
     nav: 338.37,
     sp500: 160.85,
   },
+  {
+    date: "12 April 2022",
+    nav: 339.47,
+    sp500: 160.3,
+  },
+  {
+    date: "13 April 2022",
+    nav: 339.92,
+    sp500: 162.09,
+  },
+  {
+    date: "14 April 2022",
+    nav: 339.89,
+    sp500: 160.12,
+  },
+  {
+    date: "15 April 2022",
+    nav: 342.12,
+    sp500: 160.12,
+  },
+  {
+    date: "16 April 2022",
+    nav: 339.46,
+    sp500: 160.12,
+  },
+  {
+    date: "17 April 2022",
+    nav: 340.82,
+    sp500: 160.12,
+  },
+  {
+    date: "18 April 2022",
+    nav: 342.37,
+    sp500: 160.09,
+  },
+  {
+    date: "19 April 2022",
+    nav: 342.21,
+    sp500: 162.66,
+  },
+  {
+    date: "20 April 2022",
+    nav: 343.1,
+    sp500: 162.56,
+  },
 ];
 // ChartJS.register(
 //   CategoryScale,
